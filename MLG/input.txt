@@ -1,0 +1,8 @@
+numNodes = 100; % number of nodes in the network
+numCommunities = 4;  % number of communities
+alpha = 0.8;   % the parameter for link density
+dh = 0.8;      %  homophily
+numlinks = 2;
+relationTransition=load('relations.txt');
+freq = load('frequency.txt');
+[Net,label] = synthetic_generator(numNodes,alpha,dh,numCommunities,relationTransition,numlinks,freq);
