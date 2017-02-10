@@ -6,4 +6,4 @@ dh = 0.8;      %  homophily
 attNumber = 10;  % the number of features
 TargetStats = loadStats('targetStats.csv');
 fs=0.9; %feature similarity parameter
-[Net,Attributes,label] =undirect_synthetic_generator(numNodes,alpha,dh,numCommunities, vocabSize,  TargetStats,fs);
+[Net,Attributes,label] =undirect_synthetic_generator(numNodes,alpha,dh,numCommunities, attNumber,  TargetStats,fs);
